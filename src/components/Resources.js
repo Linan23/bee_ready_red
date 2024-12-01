@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Resources() {
     return (
@@ -6,20 +7,72 @@ function Resources() {
             <div className="container">
                 <h1>Resources</h1>
                 <div className="resources">
+                    {/* School Registration */}
                     <div className="resource">
-                        <h2>School Registration</h2>
-                        <p>Information to help parents register their child for education</p>
-                        <button>Learn More</button>
+                        <img
+                            src="/learning.jpeg" 
+                            alt="School Registration"
+                        />
+                        <div>
+                            <h2>
+                                <Link to="/school-registration" className="resource-link">
+                                    School Registration
+                                </Link>
+                            </h2>
+                            <p>
+                                Explore our educational resources to support and enrich your child's learning journey. 
+                                With information from school registration requirements to helpful study tips and engaging learning, 
+                                empower your child's education with the support they need to thrive!
+                            </p>
+                        </div>
                     </div>
+
+                    {/* Medical Services */}
                     <div className="resource">
-                        <h2>Medical Services</h2>
-                        <p>Healthcare resources and clinics in your area</p>
-                        <button>Learn More</button>
+                        <img
+                            src="/medical.png" 
+                            alt="Medical Services"
+                        />
+                        <div>
+                            <h2>
+                                <a
+                                    href="https://example-medical-services.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="resource-link"
+                                >
+                                    Medical Services
+                                </a>
+                            </h2>
+                            <p>
+                                Find crucial medical information such as doctors, dentists, and your nearest urgent care to provide the best for your child. 
+                                Healthcare is essential to allow a child to grow and learn. Find healthcare today!
+                            </p>
+                        </div>
                     </div>
+
+                    {/* Parenting */}
                     <div className="resource">
-                        <h2>Food Services</h2>
-                        <p>Information on food banks and food assistance programs</p>
-                        <button>Learn More</button>
+                        <img
+                            src="/parenting.jpg" 
+                            alt="Parenting"
+                        />
+                        <div>
+                            <h2>
+                                <a
+                                    href="https://example-food-services.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="resource-link"
+                                >
+                                    Parenting
+                                </a>
+                            </h2>
+                            <p>
+                                Raising a child requires a village. From a child's mental health to nutrition, 
+                                these resources will help you raise your child to be the healthiest and happiest child.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

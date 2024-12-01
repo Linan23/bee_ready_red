@@ -4,7 +4,8 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Resources from './components/Resources';
 import ForKids from './components/ForKids';
-import './styles.css'; 
+import SchoolRegistration from './components/SchoolRegistration'; 
+import './styles.css';
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/resources" element={<Resources />} />
                 <Route path="/for-kids" element={<ForKids />} />
+                <Route path="/school-registration" element={<SchoolRegistration />} /> 
             </Routes>
         </Router>
     );
