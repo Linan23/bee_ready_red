@@ -1,7 +1,6 @@
 import React from 'react';
-import './Resources.css';
 
-const Resources = () => {
+function Resources() {
     return (
         <main>
             <div className="container">
@@ -9,14 +8,23 @@ const Resources = () => {
                 <div className="resources">
                     <div className="resource">
                         <h2>School Registration</h2>
-                        <p>Information on how to register your child for local schools.</p>
+                        <p>Information to help parents register their child for education</p>
                         <button>Learn More</button>
                     </div>
-                    {/* Repeat resources as needed */}
+                    <div className="resource">
+                        <h2>Medical Services</h2>
+                        <p>Healthcare resources and clinics in your area</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div className="resource">
+                        <h2>Food Services</h2>
+                        <p>Information on food banks and food assistance programs</p>
+                        <button>Learn More</button>
+                    </div>
                 </div>
             </div>
         </main>
     );
-};
+}
 
 export default Resources;

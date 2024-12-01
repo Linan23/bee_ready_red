@@ -1,33 +1,27 @@
-import React, { useState } from 'react';
-import './Header.css';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Header = () => {
-    const [isSpanish, setIsSpanish] = useState(false);
-
-    const handleTranslateClick = () => {
-        setIsSpanish(!isSpanish);
-    };
-
+function Header() {
     return (
         <header>
             <div className="container">
                 <nav>
-                    <div className="logo">
-                        <img src="placeholder.svg" alt="Bee Ready Logo" />
-                        <span>Bee Ready</span>
+                <div className="logo">
+                        <img src="/Bee_logo_word.png" alt="Bee Ready Logo" />
+                        <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+                            <span>Bee Ready</span>
+                        </Link>
                     </div>
                     <div>
-                        <a href="/" id="home-link">{isSpanish ? 'Inicio' : 'Home'}</a>
-                        <a href="/resources" id="resources-link">{isSpanish ? 'Recursos' : 'Resources'}</a>
-                        <a href="/for-kids" id="for-kids-link">{isSpanish ? 'Para Niños' : 'For Kids'}</a>
-                        <button id="translate-btn" onClick={handleTranslateClick}>
-                            {isSpanish ? 'English' : 'Translate'}
-                        </button>
+                        <a href="/" id="home-link">Home</a>
+                        <a href="/resources" id="resources-link">Resources</a>
+                        <a href="/for-kids" id="for-kids-link">For Kids</a>
+                        <button id="translate-btn" style={{ marginLeft: '1rem' }}>Translate</button>
                     </div>
                 </nav>
             </div>
         </header>
     );
-};
+}
 
 export default Header;
