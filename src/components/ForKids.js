@@ -29,7 +29,7 @@ function ForKids() {
         <main>
             <div className="container for-kids-container">
                 <div className="column">
-                    <h2 className="column-header">
+                    <h2 className="column-header" data-translate="Game">
                         <span role="img" aria-label="Game Controller">🎮</span> Game <span role="img" aria-label="Game Controller">🎮</span>
                     </h2>
                     {games.map((game, index) => (
@@ -46,7 +46,7 @@ function ForKids() {
                     ))}
                 </div>
                 <div className="column">
-                    <h2 className="column-header">
+                    <h2 className="column-header" data-translate="Learn">
                         <span role="img" aria-label="Book">📘</span> Learn <span role="img" aria-label="Book">📘</span>
                     </h2>
                     {learn.map((resource, index) => (
@@ -63,7 +63,7 @@ function ForKids() {
                     ))}
                 </div>
                 <div className="column">
-                    <h2 className="column-header">
+                    <h2 className="column-header" data-translate="Activity">
                         <span role="img" aria-label="Activity">🏃</span> Activity <span role="img" aria-label="Activity">🏃</span>
                     </h2>
                     {activities.map((activity, index) => (
