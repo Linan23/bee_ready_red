@@ -3,12 +3,14 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 function Header() {
-    // Translation Feature
     const [currentLanguage, setCurrentLanguage] = useState('en');
 
     const translatePage = async (targetLanguage) => {
         const elementsToTranslate = document.querySelectorAll('[data-translate]');
-        for (const element of elementsToTranslate) {
+
+        // Collect all texts to translate in a single batch
+        const textsToTranslate = [];
+        elementsToTranslate.forEach((element) => {
             const originalText =
                 element.getAttribute('data-original-text') || element.innerText;
 
@@ -16,27 +18,36 @@ function Header() {
                 element.setAttribute('data-original-text', originalText);
             }
 
-            try {
-                // Make API call to translate the text
-                const response = await axios.post(
-                    `https://translation.googleapis.com/language/translate/v2`,
-                    {
-                        q: originalText,
-                        target: targetLanguage,
-                        format: 'text',
-                    },
-                    {
-                        params: { key: 'AIzaSyDWaxkaEDawI7m9o6hHdgrO8VFfbyUbK50' }, 
-                    }
-                );
+            textsToTranslate.push(originalText);
+        });
 
-                // Update the translated text
+        try {
+            // Make a single API call with all texts
+            const response = await axios.post(
+                `https://translation.googleapis.com/language/translate/v2`,
+                {
+                    q: textsToTranslate, // Send all texts in a batch
+                    target: targetLanguage,
+                    format: 'text',
+                },
+                {
+                    params: { key: 'AIzaSyDWaxkaEDawI7m9o6hHdgrO8VFfbyUbK50' },
+                }
+            );
+
+            // Map translated texts to the corresponding elements
+            const translatedTexts = response.data.data.translations;
+            elementsToTranslate.forEach((element, index) => {
                 element.innerText =
-                    response.data.data.translations[0]?.translatedText || originalText;
-            } catch (error) {
-                console.error('Translation error:', error);
-                element.innerText = originalText; // Fallback to original text
-            }
+                    translatedTexts[index]?.translatedText || element.getAttribute('data-original-text');
+            });
+        } catch (error) {
+            console.error('Translation error:', error);
+
+            // Fallback to original text in case of an error
+            elementsToTranslate.forEach((element) => {
+                element.innerText = element.getAttribute('data-original-text');
+            });
         }
     };
 
@@ -71,7 +82,7 @@ function Header() {
                             style={{ marginLeft: '1rem' }}
                             onClick={toggleLanguage}
                         >
-                        {currentLanguage === 'en' ? 'Espanol' : 'English'}
+                            {currentLanguage === 'en' ? 'Espanol' : 'English'}
                         </button>
                     </div>
                 </nav>

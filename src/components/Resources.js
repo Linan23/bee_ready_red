@@ -21,8 +21,8 @@ function Resources() {
                                 </Link>
                             </h2>
                             <p data-translate>
-                                Explore our educational resources to support and enrich your child's learning journey. 
-                                With information from school registration requirements to helpful study tips and engaging learning, 
+                                Explore our educational resources to support and enrich your child's learning journey.
+                                With information from school registration requirements to helpful study tips and engaging learning,
                                 empower your child's education with the support they need to thrive!
                             </p>
                         </div>
@@ -33,18 +33,16 @@ function Resources() {
                         <img src="/medical.png" alt="Medical Services" />
                         <div>
                             <h2>
-                                <a
-                                    href="https://example-medical-services.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                <Link
+                                    to="/medical-information"
                                     className="resource-link"
                                     data-translate
                                 >
                                     Medical Services
-                                </a>
+                                </Link>
                             </h2>
                             <p data-translate>
-                                Find crucial medical information such as doctors, dentists, and your nearest urgent care to provide the best for your child. 
+                                Find crucial medical information such as doctors, dentists, and your nearest urgent care to provide the best for your child.
                                 Healthcare is essential to allow a child to grow and learn. Find healthcare today!
                             </p>
                         </div>
@@ -56,7 +54,7 @@ function Resources() {
                         <div>
                             <h2>
                                 <a
-                                    href="https://example-food-services.com"
+                                    href="https://www.familyconnectionofeaston.org/family-support/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="resource-link"
@@ -66,7 +64,7 @@ function Resources() {
                                 </a>
                             </h2>
                             <p data-translate>
-                                Raising a child requires a village. From a child's mental health to nutrition, 
+                                Raising a child requires a village. From a child's mental health to nutrition,
                                 these resources will help you raise your child to be the healthiest and happiest child.
                             </p>
                         </div>

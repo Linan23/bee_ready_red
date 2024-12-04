@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dbe5d421.css",
+    "main.js": "/static/js/main.aa2c5600.js",
+    "static/media/Garet-Heavy.ttf": "/static/media/Garet-Heavy.8dac6a50f5993c0dee3a.ttf",
+    "index.html": "/index.html",
+    "main.dbe5d421.css.map": "/static/css/main.dbe5d421.css.map",
+    "main.aa2c5600.js.map": "/static/js/main.aa2c5600.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dbe5d421.css",
+    "static/js/main.aa2c5600.js"
+  ]
+}

@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Resources from './components/Resources';
 import ForKids from './components/ForKids';
 import SchoolRegistration from './components/SchoolRegistration'; 
+import MedicalInformation from './components/MedicalInformation';
 import './styles.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
                 <Route path="/resources" element={<Resources />} />
                 <Route path="/for-kids" element={<ForKids />} />
                 <Route path="/school-registration" element={<SchoolRegistration />} /> 
+                <Route path="/medical-information" element={<MedicalInformation />} />
             </Routes>
         </Router>
     );

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles.css'; 
+import '../styles.css';
 
 function ForKids() {
     const games = [
@@ -20,7 +20,7 @@ function ForKids() {
     ];
 
     const activities = [
-        { name: 'Easton Public Library', link: 'https://www.eastonpl.org/',  img: '/library.png'},
+        { name: 'Easton Public Library', link: 'https://www.eastonpl.org/', img: '/library.png' },
         { name: 'Crayola Factory', link: 'https://www.crayolaexperience.com/', img: '/crayola.png' },
         { name: 'Neighborhood Center', link: 'https://eastonareaneighborhoodcenter.org/', img: 'eanc.avif' },
     ];

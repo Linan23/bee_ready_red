@@ -4,7 +4,7 @@ function SchoolRegistration() {
     return (
         <main>
             <div className="school-registration-container">
-                <h1 className="school-registration-header">School Registration</h1>
+                <h1 className="school-registration-header" data-translate>School Registration</h1>
                 <div className="resources">
                     {/* Pre-K Registration Section */}
                     <div className="resource">
@@ -19,11 +19,12 @@ function SchoolRegistration() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="resource-link"
+                                    data-translate
                                 >
                                     Pre-K Registration
                                 </a>
                             </h2>
-                            <p>
+                            <p data-translate>
                                 Get more resources for free on the Born Ready website to prepare your child before school starts!
                             </p>
                         </div>
@@ -42,13 +43,14 @@ function SchoolRegistration() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="resource-link"
+                                    data-translate
                                 >
                                     K-12 Registration
                                 </a>
                             </h2>
-                            <p>
-                               
-Register for Easton Area's kindergarten today! Age must be 5 before September first. Bring child’s state birth certificate, or other proof of birth, the child’s social security number(recommended), and documentation of the child’s completed basic immunizations for registration. Parents/guardians must also present acceptable proof of residence.
+                            <p data-translate>
+
+                                Register for Easton Area's kindergarten today! Age must be 5 before September first. Bring child’s state birth certificate, or other proof of birth, the child’s social security number(recommended), and documentation of the child’s completed basic immunizations for registration. Parents/guardians must also present acceptable proof of residence.
                             </p>
                         </div>
                     </div>
