@@ -6,6 +6,7 @@ import Resources from './components/Resources';
 import ForKids from './components/ForKids';
 import SchoolRegistration from './components/SchoolRegistration'; 
 import MedicalInformation from './components/MedicalInformation';
+import Parenting from './components/Parenting';
 import './styles.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
                 <Route path="/for-kids" element={<ForKids />} />
                 <Route path="/school-registration" element={<SchoolRegistration />} /> 
                 <Route path="/medical-information" element={<MedicalInformation />} />
+                <Route path="/parent" element={<Parenting />} />
             </Routes>
         </Router>
     );

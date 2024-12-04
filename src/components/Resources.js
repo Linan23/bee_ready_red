@@ -54,9 +54,7 @@ function Resources() {
                         <div>
                             <h2>
                                 <a
-                                    href="https://www.familyconnectionofeaston.org/family-support/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                    href="/parent"
                                     className="resource-link"
                                     data-translate
                                 >

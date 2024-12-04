@@ -99,7 +99,7 @@ h1, h2, .logo span {
     flex: 1;
 }
 /* dark box */
-.announcement, .resource, .activity {
+.announcement, .resource, .activity,.resource2 {
     background-color: #E0D5B3;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -257,6 +257,63 @@ h1, h2, .logo span {
 }
 
 .medical-information-container .resource p {
+    font-family: Arial, sans-serif; 
+    font-size: 1.35rem; 
+    line-height: 1.5; 
+    color: #333; 
+}
+
+
+/* parenting */
+
+.parent-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.parent-header {
+    font-family: 'Garet Heavy', Arial, sans-serif;
+    font-size: 3rem; 
+    color: black;
+    text-align: center;
+    margin-bottom: 1.5rem; 
+}
+
+.parent-container .resource {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem; 
+    margin-bottom: 1.5rem; 
+}
+
+.parent-container .resource img {
+    width: 250px; 
+    height: auto;
+    border-radius: 10px; 
+}
+
+.parent-container .resource2 {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem; 
+    margin-bottom: 1.5rem; 
+}
+
+.parent-container .resource2 img {
+    width: 250px; 
+    height: auto;
+    border-radius: 10px; 
+    margin-top: 25px;
+}
+
+.parent-container .resource p {
+    font-family: Arial, sans-serif; 
+    font-size: 1.35rem; 
+    line-height: 1.5; 
+    color: #333; 
+}
+.parent-container .resource2 p {
     font-family: Arial, sans-serif; 
     font-size: 1.35rem; 
     line-height: 1.5; 

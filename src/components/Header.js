@@ -77,6 +77,9 @@ function Header() {
                         <a href="/for-kids" id="for-kids-link" data-translate>
                             For Kids
                         </a>
+                        <a href="/about-us" id="about-us-link" data-translate>
+                            About Us
+                        </a>
                         <button
                             id="translate-btn"
                             style={{ marginLeft: '1rem' }}
