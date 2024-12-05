@@ -58,7 +58,7 @@ function MedicalInformation() {
                                 </a>
                             </h2>
                             <a
-                                href="https://maps.app.goo.gl/9eWtihhn4ST8ct7A7"
+                                href="https://maps.app.goo.gl/wDvQyFvWs1FCtcrb6"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="address-link"

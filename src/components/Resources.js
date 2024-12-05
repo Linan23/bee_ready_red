@@ -21,9 +21,9 @@ function Resources() {
                                 </Link>
                             </h2>
                             <p data-translate>
-                                Explore our educational resources to support and enrich your child's learning journey.
-                                With information from school registration requirements to helpful study tips and engaging learning,
-                                empower your child's education with the support they need to thrive!
+                                    Explore our educational resources to support and enrich your child's learning journey.
+                                    With information from school registration requirements to helpful study tips and engaging learning,
+                                    empower your child's education with the support they need to thrive!
                             </p>
                         </div>
                     </div>
