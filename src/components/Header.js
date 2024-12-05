@@ -22,7 +22,7 @@ function Header() {
         });
 
         try {
-            // Make a single API call with all texts
+            // change the text with one call to google translate
             const response = await axios.post(
                 `https://translation.googleapis.com/language/translate/v2`,
                 {
@@ -35,7 +35,7 @@ function Header() {
                 }
             );
 
-            // Map translated texts to the corresponding elements
+            // translate the texts
             const translatedTexts = response.data.data.translations;
             elementsToTranslate.forEach((element, index) => {
                 element.innerText =
@@ -44,7 +44,7 @@ function Header() {
         } catch (error) {
             console.error('Translation error:', error);
 
-            // Fallback to original text in case of an error
+            // error catch
             elementsToTranslate.forEach((element) => {
                 element.innerText = element.getAttribute('data-original-text');
             });
@@ -85,7 +85,7 @@ function Header() {
                             style={{ marginLeft: '1rem' }}
                             onClick={toggleLanguage}
                         >
-                            {currentLanguage === 'en' ? 'Espanol' : 'English'}
+                            {currentLanguage === 'en' ? 'English' : 'español'}
                         </button>
                     </div>
                 </nav>

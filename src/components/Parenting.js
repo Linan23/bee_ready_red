@@ -26,7 +26,7 @@ function Parenting() {
                                 </a>
                             </h2>
                             <p data-translate>
-                            The American Academy of Pediatrics (AAP) and its member pediatricians dedicate their efforts and resources to the health, safety and well-being of infants, children, adolescents and young adults
+                                The American Academy of Pediatrics (AAP) and its member pediatricians dedicate their efforts and resources to the health, safety and well-being of infants, children, adolescents and young adults
                             </p>
                         </div>
                     </div>
@@ -49,7 +49,7 @@ function Parenting() {
                                 </a>
                             </h2>
                             <p data-translate>
-                            Family centers are places within the community where parents can come to share and receive support.
+                                Family centers are places within the community where parents can come to share and receive support.
                             </p>
                         </div>
                     </div>

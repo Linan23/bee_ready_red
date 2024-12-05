@@ -4,8 +4,19 @@ import 'react-calendar/dist/Calendar.css';
 
 function Home() {
     const [date, setDate] = useState(new Date());
+    const [searchQuery, setSearchQuery] = useState('');
+
     const handleDateChange = (newDate) => {
         setDate(newDate);
+    };
+
+    /* Directs to google search, just for fun */
+    const handleSearchSubmit = (e) => {
+        e.preventDefault();
+        if (searchQuery.trim() !== '') {
+            const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}`;
+            window.location.href = googleSearchUrl;
+        }
     };
 
     return (
@@ -14,12 +25,14 @@ function Home() {
                 <h1 data-translate>Where Learning Takes Flight</h1>
                 <div className="search-container">
                     <img src="/Bee_logo.png" alt="Decorative Bee" style={{ transform: 'scaleX(-1)' }} />
-                    <form className="search-form" id="search-form">
+                    <form className="search-form" id="search-form" onSubmit={handleSearchSubmit}>
                         <input
                             type="search"
                             id="search-input"
                             placeholder="Search here"
                             data-translate="placeholder"
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
                         />
                         <button type="submit" data-translate>Search</button>
                     </form>

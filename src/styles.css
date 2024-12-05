@@ -131,7 +131,7 @@ h2,
 }
 
 .react-calendar {
-    flex: 1;
+    flex: 3;
     border: none;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -430,7 +430,7 @@ h2,
 .read-more-btn {
     margin-left: 0.5rem;
     background: none;
-    border:0dvh;
+    border: 0dvh;
     color: #030000;
     cursor: pointer;
     font-size: 0.9rem;
@@ -438,4 +438,23 @@ h2,
 
 .read-more-btn:hover {
     text-decoration: underline;
+}
+
+/* Address links to google map */
+.address-link {
+    display: flex;
+    align-items: center;
+    margin: 0.1rem 0;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.address-link:hover {
+    color: #0056b3;
+}
+
+.address-icon {
+    margin-right: 0.5rem;
+    font-size: 1.0rem;
 }

@@ -40,7 +40,7 @@ function AboutUs() {
         {
             name: 'Henry Hernandez',
             role: 'Role',
-            bio: `Henry Hernandez is a dynamic leader currently serving as a Senior Community Relations Consultant at Capital Blue Cross. Joining the team in 2021, he brought with him valuable experience gained as a Senior Health Navigator for AmeriHealth Caritas Pennsylvania. In his role on the corporate social responsibility team, Henry is dedicated to raising awareness and spearheading community outreach for CHIP (Children’s Health Insurance Program) in the vibrant Lehigh Valley and Northern region, encompassing Union, Snyder, Columbia, Montour, and Northumberland counties.
+            bio: `Henry is a dynamic leader currently serving as a Senior Community Relations Consultant at Capital Blue Cross. Joining the team in 2021, he brought with him valuable experience gained as a Senior Health Navigator for AmeriHealth Caritas Pennsylvania. In his role on the corporate social responsibility team, Henry is dedicated to raising awareness and spearheading community outreach for CHIP (Children’s Health Insurance Program) in the vibrant Lehigh Valley and Northern region, encompassing Union, Snyder, Columbia, Montour, and Northumberland counties.
     
             At the heart of his professional journey is a passion for community engagement, particularly in initiating and nurturing new initiatives. Henry finds immense satisfaction in witnessing these projects blossom and make a positive impact.
     
@@ -52,7 +52,7 @@ function AboutUs() {
         {
             name: 'Rosemary Kocher',
             role: 'Role',
-            bio: `Rosemary Kocher has been an educator for thirty-plus years, with twenty-three of those years in the Bangor Area School District. Rosemary has a B.S. in Elementary Education and M.Ed. in Reading. In addition, she is also a certified special education teacher and reading specialist. She holds a Reading Supervisor certification and an Administrator certification.
+            bio: `Rosemary has been an educator for thirty-plus years, with twenty-three of those years in the Bangor Area School District. Rosemary has a B.S. in Elementary Education and M.Ed. in Reading. In addition, she is also a certified special education teacher and reading specialist. She holds a Reading Supervisor certification and an Administrator certification.
     
             Rosemary has taught second grade, special education, basic skills reading and math, and reading. She has been a Title I Coordinator, Director of Elementary Education, Elementary and Middle School Assistant Principal, and Director of Instructional Support. Rosemary has helped to create programs for preschool through high school children, as well as programs for parents and staff development for teachers.
     
@@ -62,7 +62,7 @@ function AboutUs() {
         {
             name: 'Nancy D. Nicholas',
             role: 'Role',
-            bio: `Nancy D. Nicholas was a kindergarten teacher in the Easton Area School District for 40 years. In addition, she was a volunteer advisor for over ten years with Family Connection of Easton in the Easton School District. She helped to create developmentally appropriate activities for children and families, assisted with the implementation of programs for children, families, and preschool staff, and coordinated transition activities for incoming kindergarten children at their preschools.
+            bio: `Nancy was a kindergarten teacher in the Easton Area School District for 40 years. In addition, she was a volunteer advisor for over ten years with Family Connection of Easton in the Easton School District. She helped to create developmentally appropriate activities for children and families, assisted with the implementation of programs for children, families, and preschool staff, and coordinated transition activities for incoming kindergarten children at their preschools.
     
             Nancy was a member of the committee that created the formal Easton Area School District Transition Plan. Nancy graduated from Lafayette College with a BA in psychology and received a MS in Early Childhood Education from George Peabody School for Teachers of Vanderbilt University. Nancy is an Executive Board member of the Lehigh and Northampton Chapter of PennAEYC, a member of Palmer Township’s Environmental Steering Committee, a member of the Board of Trustees for Palmer Moravian Church and on the Palmer Moravian Day School Board.`,
             img: '/Hive.png',
@@ -70,7 +70,7 @@ function AboutUs() {
         {
             name: 'Terry Thomas',
             role: 'Role',
-            bio: `Terry Thomas has spent nearly fifty years in the field of early childhood. With her undergraduate degree in education and psychology and a Master’s degree in Early Childhood Education and Child Development, she was primed for her future endeavors.
+            bio: `Terry has spent nearly fifty years in the field of early childhood. With her undergraduate degree in education and psychology and a Master’s degree in Early Childhood Education and Child Development, she was primed for her future endeavors.
     
             Her career has included but was not limited to the role of Director of early childhood and school-age programs, early childhood education consultant, and mentor. For many years, she provided supportive clinical care in a large pediatric practice working with children from birth to five and their families on child development, nutrition, behavior, sleep, emotional well-being, and many other aspects of early childhood growth and development.
     
@@ -88,7 +88,7 @@ function AboutUs() {
     ];
 
     const [expanded, setExpanded] = useState(
-        contributors.map(() => false) // Default: all bios are truncated
+        contributors.map(() => false) // all bios are truncated by the default
     );
 
 
