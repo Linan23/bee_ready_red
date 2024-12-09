@@ -31,7 +31,7 @@ function Header() {
                     format: 'text',
                 },
                 {
-                    params: { key: 'AIzaSyDWaxkaEDawI7m9o6hHdgrO8VFfbyUbK50' },
+                    params: { key: 'this will be ur own api key from Google cloud console' },
                 }
             );
 
